@@ -1,7 +1,7 @@
 const http = require('http');
 
 const hostname = '127.0.0.1'; //this is localhost
-const port = 3000; // this is node convention, go to localhost:3000 to view live
+const port = process.env.PORT || 3000; // this is node convention, go to localhost:3000 to view live
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
