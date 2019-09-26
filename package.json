@@ -1,0 +1,20 @@
+{
+  "name": "introtonode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katehmay/IntroToNode.git"
+  },
+  "keywords": [],
+  "author": "katehmay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katehmay/IntroToNode/issues"
+  },
+  "homepage": "https://github.com/katehmay/IntroToNode#readme"
+}
