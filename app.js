@@ -1,14 +1,13 @@
-const http = require('http');
+const express = require('express');
 
-const hostname = '127.0.0.1'; //this is localhost
-const port = process.env.PORT || 3000; // this is node convention, go to localhost:3000 to view live
+const port = process.env.PORT || 3000;
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
-});
+const app = express();
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+app.get('/', (req, res) => {
+	res.send('hello world');
+})
+
+app.listen(port, () => {
+	console.log(`app is running on port ${port}`);
+})
